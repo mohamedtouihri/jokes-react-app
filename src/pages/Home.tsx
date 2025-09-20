@@ -11,6 +11,7 @@ export default function Home() {
         gap: "10px",
         justifyContent: "center",
         alignItems: "center",
+        marginTop: "50px",
       }}
     >
       <Button type="primary" icon={<LoginOutlined />} size="large">
