@@ -5,7 +5,13 @@ import { Button, Result } from "antd";
 import { FULL_JOKES_ROUTE } from "../constants/routes/routes";
 
 export default function Dashboard() {
-  const { data } = useAuth();
+  // Define the expected shape of the auth data
+  interface AuthData {
+    fullname: string;
+    // add other properties if needed
+  }
+
+  const data = useAuth() as AuthData | null;
   return (
     <div
       style={{

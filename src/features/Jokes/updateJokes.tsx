@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { ALL_JOKES_API } from "../../constants/JokesApi/jokesApi";
 import { axiosInstance } from "../../lib/axios";
@@ -16,7 +17,7 @@ export default function UpdateJokes({
   const { message } = App.useApp();
   const [form] = Form.useForm();
   const queryClient = useQueryClient();
-  const { data, isLoading: isLoadingJoke } = useQuery({
+  const { isLoading: isLoadingJoke } = useQuery({
     queryKey: ["jokes", jokeId],
     queryFn: async () => {
       const response = await axiosInstance.get(`${ALL_JOKES_API}/${jokeId}`);
