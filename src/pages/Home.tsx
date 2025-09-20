@@ -5,14 +5,19 @@ import { LOGIN, REGISTER } from "../constants/routes/routes";
 
 export default function Home() {
   return (
-    <div style={{ display: "flex", gap: "10px", justifyContent: "center", marginTop: "20px" }}>
-      <Button type="primary" icon={<LoginOutlined />}>
-        Login
-        <Link to={LOGIN} />
+    <div
+      style={{
+        display: "flex",
+        gap: "10px",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Button type="primary" icon={<LoginOutlined />} size="large">
+        <Link to={LOGIN}>Login</Link>
       </Button>
-      <Button type="primary" icon={<LoginOutlined />}>
-        Register
-        <Link to={REGISTER} />
+      <Button type="primary" icon={<LoginOutlined />} size="large">
+        <Link to={REGISTER}>Register</Link>
       </Button>
     </div>
   );
