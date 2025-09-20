@@ -1,6 +1,6 @@
 import { LoginOutlined } from "@ant-design/icons";
 import { Button } from "antd";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { LOGIN, REGISTER } from "../constants/routes/routes";
 
 export default function Home() {
@@ -15,10 +15,12 @@ export default function Home() {
       }}
     >
       <Button type="primary" icon={<LoginOutlined />} size="large">
-        <Link to={LOGIN}></Link>Login
+        <Navigate to={LOGIN} /> 
+        Login
       </Button>
       <Button type="primary" icon={<LoginOutlined />} size="large">
-        <Link to={REGISTER}></Link>Register
+        <Navigate to={REGISTER} />
+        Register
       </Button>
     </div>
   );
