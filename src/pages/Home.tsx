@@ -15,10 +15,10 @@ export default function Home() {
       }}
     >
       <Button type="primary" icon={<LoginOutlined />} size="large">
-        <Link to={LOGIN}>Login</Link>
+        <Link to={LOGIN}></Link>Login
       </Button>
       <Button type="primary" icon={<LoginOutlined />} size="large">
-        <Link to={REGISTER}>Register</Link>
+        <Link to={REGISTER}></Link>Register
       </Button>
     </div>
   );
