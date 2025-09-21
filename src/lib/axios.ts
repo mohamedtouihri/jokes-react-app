@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-    baseURL : "https://jokes-node-app.onrender.com/api",
+    baseURL : "https://jokes-node-app.onrender.com",
 })
 
 axiosInstance.interceptors.request.use((config) => {
