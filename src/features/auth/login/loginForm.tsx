@@ -51,7 +51,7 @@ export default function LoginForm() {
               { required: true, message: "Please input your password!" },
               {
                 type: "string",
-                min: 2,
+                min: 8,
                 message: "Password must be at least ${min} characters!",
               },
             ]}
